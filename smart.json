@@ -27,7 +27,7 @@
     "notify": {
       "git": "https://github.com/DerMambo/notify.git"
     },
-    "ms-google-analytics":{
+    "ms-google-analytics": {
       "git": "https://github.com/DerMambo/ms-google-analytics.git"
     },
     "ms-markdown-editor": {

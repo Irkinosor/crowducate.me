@@ -18,6 +18,8 @@ accounts-ui
 # Packages by community
 minimongoid
 iron-router
+iron:router
+kaptron:minimongoid
 
 # Packages by Manuel Schoebel
 mambo-authenticate
