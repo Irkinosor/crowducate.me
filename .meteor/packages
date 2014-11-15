@@ -22,14 +22,3 @@ iron:router
 kaptron:minimongoid
 
 # Packages by Manuel Schoebel
-mambo-authenticate
-ms-seo
-ms-validator
-basic-auth
-mambo-forms
-ms-google-analytics
-common-helpers
-notify
-bootstrap-tabs
-moment
-ms-markdown-editor
