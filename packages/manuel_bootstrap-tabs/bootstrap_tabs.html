@@ -1,0 +1,18 @@
+<template name="bootstrapTabsMenu">
+  <ul class="nav nav-tabs bootstrap-tabs-nav">
+    {{#each tabItems}}
+    {{>bootstrapTabsMenuItem}}
+    {{/each}}
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      {{>renderActiveTemplate}}
+    </div>
+  </div>
+</template>
+
+<template name="bootstrapTabsMenuItem">
+  <li class="{{active}}">
+    <a class="change-tab" data-tab="{{key}}">{{label}}</a>
+  </li>
+</template>

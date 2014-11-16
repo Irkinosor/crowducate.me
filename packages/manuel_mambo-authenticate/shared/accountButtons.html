@@ -1,0 +1,51 @@
+<template name="entryAccountButtons">
+  {{#if currentUser}}
+
+    {{#if profileUrl}}
+      {{#if wrapLinks}}
+        <li>
+          <a class='profileLink' href='{{profileUrl}}'>{{signedInAs}}</a>
+        </li>
+      {{else}}
+        <a class='profileLink' href='{{profileUrl}}'>{{signedInAs}}</a>
+      {{/if}}      
+    {{else}}
+      {{#if wrapLinks}}
+        <li>
+          <p class="navbar-text">{{signedInAs}}</p>
+        </li>
+      {{else}}
+        <p class="navbar-text">{{signedInAs}}</p>
+      {{/if}}
+    {{/if}}
+
+    {{#if wrapLinks}}
+      <li>
+        <a href="/sign-out">{{AE_i18n 'Sign Out'}}</a>
+      </li>
+    {{else}}
+      <a href="/sign-out">{{AE_i18n 'Sign Out'}}</a>
+    {{/if}}
+
+  {{else}}
+
+    {{#if wrapLinks}}
+      <li>
+        <a href="/sign-in">{{AE_i18n 'Sign In'}}</a>
+      </li>
+    {{else}}
+      <a href="/sign-in">{{AE_i18n 'Sign In'}}</a>
+    {{/if}}
+
+    {{#unless wrapLinks}}<span>{{AE_i18n 'or'}}</span>{{/unless}}
+
+    {{#if wrapLinks}}
+      <li>
+        <a href="/sign-up">{{AE_i18n 'Sign Up'}}</a>
+      </li>
+    {{else}}
+      <a href="/sign-up">{{AE_i18n 'Sign Up'}}</a>
+    {{/if}}
+
+  {{/if}}
+</template>

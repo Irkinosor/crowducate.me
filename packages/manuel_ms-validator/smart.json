@@ -1,0 +1,11 @@
+{
+  "name": "ms-validator",
+  "description": "A meteor.js validator",
+  "homepage": "",
+  "author": "Manuel Schoebel (http://www.manuel-schoebel.com)",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {
+    
+  }
+}
